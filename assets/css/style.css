@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-padrao:#ff523b;
+    --cor-padrao-hover:#f3b2e5;
+    --cor-fonte:#fff;
+    --cor-fonte-p:#555;
+    --cor-btn:#563434;
+    --cor-btn-hover:#15ff00;
+    --cor-btn-fonte:#000;
+    --cor-fonte-corpo:#555;
+    --cor-fonte-corpo-leve:#777;
+    --cor-background:#1E90FF;
+    --cor-background-2:#87CEFA;
+}
+
+
+
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ver-produtos .btn{
+    border: none;
+    background: var(--cor-background);
+    width: 40%;
+    color: var(--cor-fonte);
+    height: 42px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ver-produtos .btn:hover{
+    background-color: var(--cor-background-2);
+    color: var(--cor-btn-fonte);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ver-produtos{
+    margin-top: 40px;
+}
+
+.ver-produtos .col-2 img{
+    width: 100%;
+    padding: 0;
+}
+
+.ver-produtos #produtoImg{
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.ver-produtos .col-2{
+    padding: 20px;
+}
+
+
+
+.ver-produtos select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid var(--cor-background);
+}
+
+.ver-produtos select:focus{
+    outline: none;
+}
+
+.ver-produtos input{
+    width: 50px;
+    height: 40px;
+    font-size: 20px;
+    margin-right: 10px;
+    padding-left: 10px;
+    border: 1px solid var(--cor-background);
+}
+
+.ver-produtos input:focus{
+    outline: none;
+}
+
+
+.ver-produtos p{
+    font-size: 16px;
+}
+
+.img-linha{
+   display: flex;
+   justify-content: space-between;
+}
+
+.img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+
+.summary .product-price{
+    color: red;
+    font-size: 18px;
+   }
+
+   .summary .entry{
+    align-items: center;
+    text-align: center;
+   }
+
+   
+  
+
+   
+   .summary .qty input{
+    text-align: center;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+   }
+
+   .ValorPromo {
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    color: red;
+  
+    text-align: center;
+}
+
+h4{
+    color: #777;
+}
+
+
+
+
+
+@media only screen and (max-width:800px) {
+    nav ul{
+      position: absolute;
+      top: 130px;
+      left: 0;
+      background: var(--cor-btn-fonte);
+      width: 100%;
+      overflow: hidden;
+      transition: max-height 0.5s;
+    }
+
+    nav ul li{
+      display: block;
+      margin-top: 10px;
+      margin-right: 50px;
+      margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: var(--cor-fonte);
+    }
+
+    .menu-celular{
+        display: block;
+        cursor: pointer;
+    }
+
+    .novoMenu nav ul li a{
+        color: var(--cor-fonte);
+      }
+      
+}
+
+@media only screen and (max-width:600px) {
+    .linha{
+        text-align: center;
+    }
+
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+
+    .col-2 h1{
+       font-size: 27px;
+    }
+
+    .rodape-col-3, .rodape-col-4{
+        text-align: center;
+    }
+
+    .col-4 p{
+        font-size: 24px;
+    }
+
+    .novoMenu nav ul li a{
+        color: var(--cor-fonte);
+      }
+
+      .ver-produtos .col-2{
+        margin: 20px 0;
+      }
+
+      .ver-produtos .linha{
+        text-align: left;
+      }
+
+      .ver-produtos h1{
+        font-size: 26px;
+        line-height: 26px;
+      }
+      
+}
